@@ -1,0 +1,287 @@
+/**INICIO DE LA HOJA DE ESTILOS CORRESPONDIENTE A INDEX.HTML**/
+@font-face {
+  font-family: 'Dancing Script', cursive;
+
+}
+
+html{
+  background-color: #02010a;
+  font-family: Dancing Script;
+}
+
+html img{
+  box-shadow: 2px 2px #02010a
+}
+
+#Cabecera {
+  font-family: Dancing Script;
+  color: white;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  animation: animacion 1s;
+}
+
+@keyframes animacion {
+  0%{
+    position: relative;
+    margin-top: 150%;
+  }
+  60%{
+    position: relative;
+    margin-top: -5%;
+  }
+  100%{
+    position: relative;
+    margin-top: 0%;
+  }
+}
+
+@-webkit-keyframes animacion {
+  0%{
+    position: relative;
+    margin-top: 150%;
+  }
+  60%{
+    position: relative;
+    margin-top: -5%;
+  }
+  100%{
+    position: relative;
+    margin-top: 0%;
+  }
+}
+
+#Cabecera h1{
+  text-shadow: 2px 2px #02010a;
+  display: inline;
+  margin-left: 2%;
+}
+
+#Cabecera ol{
+  display:inline;
+  margin-left: 50%;
+  margin-top: 0.5%;
+  margin-right: 0.5%;
+}
+
+.Central{
+  background-color: #82c3a6;
+	display:block;
+}
+
+.Central img{
+  margin: 1% 0% 1% 10%;
+}
+
+.Secundaria{
+  background-color: #d5c75f;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.Secundaria div a{
+  color: black;
+  display: flex;
+  margin: 1% 0% 2% 40%;
+}
+
+#imagen-izquierda{
+  width: 80%;
+  height: 50%;
+  margin: 5% 15% 1% 10%;
+}
+
+#imagen-izquierda:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+  -webkit-box-shadow: 2px 2px #82c3a6;
+  -moz-box-shadow: 20px 2px #82c3a6;
+}
+
+#imagen-derecha{
+  width: 80%;
+  height: 50%;
+  margin: 5% 15% 1% 10%;
+}
+
+#imagen-derecha:hover{
+  transform:translate(20px,-5px);
+  box-shadow: 2px 2px #82c3a6;
+  -webkit-box-shadow: 2px 2px #82c3a6;
+  -moz-box-shadow: 20px 2px #82c3a6;
+}
+
+footer{
+  background-color: #C6d5c5;
+  display:flex;
+  border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+}
+
+.contactos{
+  width: 20%;
+  height: 25%;
+  margin: 1%;
+  font-size: 14px;
+}
+
+.termino{
+  width: 30%;
+  height: 25%;
+  margin: 1%;
+  font-size: 14px;
+}
+
+.redessociales{
+  width: 30%;
+  height: 25%;
+  margin: 1%;
+  font-size: 14px;
+}
+
+.derechos{
+  width: 20%;
+  height: 25%;
+  margin: 1%;
+  font-size: 14px;
+}
+
+li{
+  list-style: none;
+  margin-left: -40px;
+}
+
+/**FIN INDEX.HTML**/
+
+/**INICIO PAISAJES.HTML**/
+
+.paisajes{
+  background-color: #d5c75f;
+  border: 1px solid black;
+}
+
+.paisajes img:first-child{
+  margin: 1.5%;
+  filter: blur(10px) !important;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+}
+
+.paisajes img:nth-child(even){
+  margin: 1.5%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+}
+
+.paisajes img:nth-child(3){
+  margin: 1.5%;
+  filter: sepia(90%);
+  -webkit-filter: sepia(90%);
+  -moz-filter: sepia(90%);
+}
+
+.paisajes img:nth-child(4){
+  margin: 1.5%;
+}
+
+.paisajes img:nth-child(5){
+  margin: 1.5%;
+}
+
+/**FIN PAISAJES.HTML**/
+
+/**INICIO RETRATOS.HTML**/
+
+.retratos{
+  background-color: #d5c75f;
+  border: 1px solid black;
+}
+
+.retratos img:first-child{
+  margin: 1.5%;
+  filter: blur(10px) !important;
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+}
+
+.retratos img:nth-child(even){
+  margin: 1.5%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+}
+
+.retratos img:nth-child(3){
+  margin: 1.5%;
+  filter: sepia(90%);
+  -webkit-filter: sepia(90%);
+  -moz-filter: sepia(90%);
+}
+
+.retratos img:nth-child(4){
+  margin: 1.5%;
+}
+
+.retratos img:nth-child(5){
+  margin: 1.5%;
+}
+
+/**FIN RETRATOS.HTML**/
+
+/**Consideraciones generales mas slidein**/
+
+@media (max-width: 900px) {
+  .Contenido{
+    width: 100%;
+  }
+  #Cabecera{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+  }
+  #Cabecera ol{
+    display: block;
+    margin-left: -10%;
+  }
+  .Central{
+    display: block;
+    margin: auto;
+  }
+  .Secundaria{
+    display: block;
+    margin: auto;
+  }
+  footer{
+    width: 90%;
+    padding-left: 10%;
+    display: inline-block;
+  }
+  .contacto{width: 100%;}
+  .terminos{width: 100%;}
+  .redes-sociales{width: 100%;}
+  .derechos{width: 100%;}
+  .paisajes img{
+    width: 95%;
+    margin: auto;
+    flex-direction: column;
+  }
+  .retratos img{
+    width: 95%;
+    margin: auto;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 900px) {
+  .Contenido{
+    width: 900px;
+    display: block;
+    margin: auto;
+  }
+
+}
